@@ -1,6 +1,8 @@
-# OpenapiValidator
+# OpenAPIv3Validator
 
-**TODO: Add description**
+A small library for validating OpenAPI specs independently of the [Swagger Editor](https://editor.swagger.io) - and independently of JavaScript.
+
+Originally extracted from a branch of [mimicry](https://github.com/mimicry-tech/mimicry) as this might be useful to others.
 
 ## Installation
 
@@ -10,7 +12,7 @@ by adding `openapi_validator` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:openapi_validator, "~> 0.1.0"}
+    {:openapiv3_validator, "~> 0.1.0"}
   ]
 end
 ```

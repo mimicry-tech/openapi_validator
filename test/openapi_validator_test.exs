@@ -1,8 +1,4 @@
-defmodule OpenapiValidatorTest do
+defmodule OpenAPIv3ValidatorTest do
   use ExUnit.Case
-  doctest OpenapiValidator
-
-  test "greets the world" do
-    assert OpenapiValidator.hello() == :world
-  end
+  doctest OpenAPIv3Validator
 end
