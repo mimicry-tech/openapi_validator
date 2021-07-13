@@ -34,7 +34,7 @@ my_specification |> OpenAPIv3Validator.validate()
 # :ok | {:error, []}
 ```
 
-This uses the most excellent `ex_json_schema`, you can also grab the schema directly and use it with `ex_json_schema`s `Validator`:
+This uses the most excellent [`ex_json_schema`](https://hex.pm/packages/ex_json_schema), you can also grab the schema directly and use it with `ex_json_schema`s `Validator`:
 
 ```elixir
 alias OpenAPIv3Validator.Schemas.OpenAPI.V3, as: V3
