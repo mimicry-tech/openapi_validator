@@ -52,7 +52,8 @@ defmodule OpenAPIv3Validator.MixProject do
         "lib/",
         "mix.exs",
         "README*",
-        "LICENSE*"
+        "LICENSE*",
+        "CHANGELOG*"
       ],
       maintainers: [
         "Florian Kraft"
