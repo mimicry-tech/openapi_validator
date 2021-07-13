@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+* Typos in README
+
 ## v0.1.0
 
 * First release, contains a static OpenAPIv3 specification
