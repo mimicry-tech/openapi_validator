@@ -6,8 +6,7 @@ Originally extracted from a branch of [mimicry](https://github.com/mimicry-tech/
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `openapi_validator` to your list of dependencies in `mix.exs`:
+The package can be installedby adding `openapiv3_validator` to your list ofdependencies in `mix.exs`:
 
 ```elixir
 def deps do
@@ -19,5 +18,34 @@ end
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/openapi_validator](https://hexdocs.pm/openapi_validator).
+be found at [https://hexdocs.pm/openapi_validator](https://hexdocs.pm/openapiv3_validator).
+
+## Usage
+
+The package provides the openapi v3 schema as a plain elixir struct, so you can either:
+
+```elixir
+my_specification = %{}
+
+my_specification |> OpenAPIv3Validator.valid?
+# true / false
+
+my_specification |> OpenAPIv3Validator/validate
+# :ok | {:error, []}
+```
+
+This uses the most excellent `ex_json_schema`, you can also grab the schema directly and use it with `ex_json_schema`s `Validator`:
+
+```elixir
+alias OpenAPIv3Validator.Schemas.OpenAPI.V3, as: V3
+alias ExJson.{Schema, Validator}
+
+my_specification = %{
+  "openapi" => "3.0.0",
+  # ...
+}
+
+V3.schema() |> Schema.resolve |> Validator.valid?(my_specification)
+```
+
 
