@@ -27,10 +27,10 @@ The package provides the openapi v3 schema as a plain elixir struct, so you can 
 ```elixir
 my_specification = %{}
 
-my_specification |> OpenAPIv3Validator.valid?
+my_specification |> OpenAPIv3Validator.valid?()
 # true / false
 
-my_specification |> OpenAPIv3Validator/validate
+my_specification |> OpenAPIv3Validator.validate()
 # :ok | {:error, []}
 ```
 
