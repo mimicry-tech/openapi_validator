@@ -38,7 +38,8 @@ This uses the most excellent [`ex_json_schema`](https://hex.pm/packages/ex_json_
 
 ```elixir
 alias OpenAPIv3Validator.Schemas.OpenAPI.V3, as: V3
-alias ExJson.{Schema, Validator}
+alias ExJson.Schema
+alias ExJsonSchema.Validator
 
 my_specification = %{
   "openapi" => "3.0.0",
