@@ -76,7 +76,3 @@ jobs:
       run: mix do deps.get, compile
     - name: Run code analysis
       run: mix credo --strict
-    - name: Report coverage
-      run: mix coveralls.github
-    - name: Check documentation coverage
-      run: mix inch
