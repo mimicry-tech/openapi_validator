@@ -5,7 +5,7 @@ defmodule OpenAPIv3Validator.MixProject do
     [
       app: :openapiv3_validator,
       version: "0.1.0",
-      elixir: "~> 1.12",
+      elixir: "~> 1.1",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       pacakge: package(),
