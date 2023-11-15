@@ -31,7 +31,7 @@ defmodule OpenAPIv3Validator.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:ex_json_schema, "~> 0.9.1"},
+      {:ex_json_schema, "~> 0.10.2"},
 
       # docs
       {:ex_doc, "~> 0.21", only: :dev, runtime: false},
